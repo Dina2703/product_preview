@@ -22,7 +22,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   background-color: var(--primary-cream);
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,13 +49,13 @@ img {
 }
 
 .wrapper {
-  margin: 1.8rem;
+  margin: 1.7rem;
   color: var(--grayish-blue);
 }
 
 .category {
   text-transform: uppercase;
-  margin: 13px 0;
+  margin: 8px 0;
   font-weight: 100;
   letter-spacing: 3px;
   font-size: 0.8rem;
@@ -65,7 +64,7 @@ img {
 .product_name {
   color: var(--dark-blue);
   line-height: 2rem;
-  padding: 10px 0;
+  padding: 6px 0;
   margin: 5px 0;
 }
 
@@ -121,4 +120,25 @@ button {
   background: transparent;
   border: none;
   color: var(--white);
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 20px;
+    padding: 6px;
+    height: auto;
+  }
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .product_context {
+    border-radius: 0 0 10px 10px;
+    margin-top: -10px;
+  }
 }
